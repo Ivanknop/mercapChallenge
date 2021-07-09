@@ -63,4 +63,3 @@ factura1 = Factura(clienteIvan)
 factura2 = Factura(clienteDiana)
 
 factura1.facturarMes(7)
-factura1.facturar()

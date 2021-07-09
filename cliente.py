@@ -7,7 +7,7 @@ class Cliente():
     def __init__(self,nombreCompleto,numero,abono):
         self.numero = numero
         self.nombreCompleto = nombreCompleto
-        self.llamadas = []
+        self.llamadas = self.inicializarLlamadas()
         self.abono = abono
     def __str__(self):
         '''
@@ -25,14 +25,21 @@ class Cliente():
     def getAbono (self):
         return self.abono
 
+    def inicializarLlamadas(self):
+        llamadas = []
+        for i in range(12):
+            llamadas.append([])
+        return llamadas
+
     def setAbono(self,nuevoAbono):
         '''
         Permite modificar el abono básico
         '''
         self.abono = nuevoAbono
-    
+
     def agregarLlamada(self,nuevaLlamada):
         '''
         Agrega una nueva llamada de tipo Llamada
         '''
-        self.llamadas.append(nuevaLlamada)
+        self.llamadas[nuevaLlamada.getFecha().month-1].append(nuevaLlamada)
+

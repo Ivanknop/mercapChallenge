@@ -40,9 +40,6 @@ class LlamadaLocal(Llamada):
         Llamada.__init__(self,duracion,codigoOrigen,fecha,codigoDestino,mes)
     def __str__(self):
         return super().__str__()+'| Llamada Local'
-    
-    def getDiaHabil(self):
-        return self.diaHabil
 
     def verFranjaHoraria(self):
         return (self.getFecha().hour>=8) & (self.getFecha().hour<= 20)
