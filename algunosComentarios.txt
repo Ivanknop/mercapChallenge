@@ -1,0 +1,13 @@
+*no coloqué los getters en el UML. Solo le puse setter al atributo abono de Cliente porque entiendo que es problable se modifique de forma regular
+
+*por simplificación establecí las llamadas nacionales en el rango 0 a 99 y las internacionales de 100 en adelante
+
+*cada una tiene dos valores de precios de llamada (0 a 49 / 50 a 99 en nacional // 100 a 199 y 200 en adelante internacional)
+
+*el playground.py es el test. Ahora mismo utiliza la fecha actual al crearse las llamadas, por ende es siempre el tiempo inmediato. Están escritos mecanismos de prueba, pero requieren hacer algunas modificaciones en la clase llamada (agregar los atributos mes, horario,diaHabil)
+
+*aunque el playground.py funciona de test, harbía que realizar una clase Empresa() que posea la lista de clientes y sea capaz de facturar. Al no estar esto establecido en la consigna, decidí no hacerlo. De ser necesario quedaría algo así (no lo diseñé ni escribí)==> 
+            Class Empresa >>> atributos>>> clientes: Cliente
+                          >>> mensajes >>> agregarCliente(nuevoCliente)
+                                           borrarCliente(nuevoCliente)
+                                           facturar():factura

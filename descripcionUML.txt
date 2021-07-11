@@ -33,3 +33,4 @@ Cliente >>> 		atributos:
 				llamadas:llamada
 			mensajes:
 				agregarLlamada(llamada)
+				setAbono(nuevoAbono)

@@ -1,5 +1,5 @@
-from cliente import *
-from facturacion import *
+from cliente import Cliente
+from facturacion import Factura
 from llamada import *
 from datetime import date, datetime
 '''
@@ -9,6 +9,9 @@ from datetime import date, datetime
 '''
 
 def esNacional(codigo):
+    '''
+    a modo de prueba para diferenciar llamadaNacional de llamadaInternacional
+    '''
     return (codigo < 100)
 
 '''
